@@ -16,4 +16,11 @@ class ProductsControllerTest < ActionDispatch::IntegrationTest
     assert_select ".description", "Good PS4"
     assert_select ".price", "300$"
   end
+
+  test "render a new product form" do
+    get new_product_path
+
+    assert_response :success
+    assert_select "form"
+  end
 end
