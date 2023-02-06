@@ -6,10 +6,6 @@ class CategoriesController < ApplicationController
     @categories = Category.all
   end
 
-  # GET /categories/1 or /categories/1.json
-  def show
-  end
-
   # GET /categories/new
   def new
     @category = Category.new
@@ -25,11 +21,9 @@ class CategoriesController < ApplicationController
 
     respond_to do |format|
       if @category.save
-        format.html { redirect_to category_url(@category), notice: "Category was successfully created." }
-        format.json { render :show, status: :created, location: @category }
+        format.html { redirect_to categories_url, notice: t('activerecord.successful.messages.created', :model => @category.class.model_name.human) }
       else
         format.html { render :new, status: :unprocessable_entity }
-        format.json { render json: @category.errors, status: :unprocessable_entity }
       end
     end
   end
@@ -38,11 +32,9 @@ class CategoriesController < ApplicationController
   def update
     respond_to do |format|
       if @category.update(category_params)
-        format.html { redirect_to category_url(@category), notice: "Category was successfully updated." }
-        format.json { render :show, status: :ok, location: @category }
+        format.html { redirect_to categories_url, notice: t('activerecord.successful.messages.updated', :model => @category.class.model_name.human) }
       else
         format.html { render :edit, status: :unprocessable_entity }
-        format.json { render json: @category.errors, status: :unprocessable_entity }
       end
     end
   end
@@ -52,7 +44,7 @@ class CategoriesController < ApplicationController
     @category.destroy
 
     respond_to do |format|
-      format.html { redirect_to categories_url, notice: "Category was successfully destroyed." }
+      format.html { redirect_to categories_url, notice: t('activerecord.successful.messages.destroyed', :model => @category.class.model_name.human) }
       format.json { head :no_content }
     end
   end

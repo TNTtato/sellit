@@ -1,7 +1,14 @@
 <%= form_with model: @product do |f| %>
-  <% @product.errors.full_messages.each do |error| %>
-    <%= error %>
-    <br>
+  <% if @product.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(@product.errors.count, t('.error')) %> <%= t('.error_full')%></h2>
+
+      <ul>
+        <% @product.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
   <% end %>
   <div>
     <%= f.label :title, t(".title") %>

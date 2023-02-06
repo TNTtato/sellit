@@ -1,10 +1,35 @@
 ---
 en:
   activerecord:
+    attributes:
+      category:
+        name: Name
+      product:
+        description: Description
+        photo: Photo
+        price: Price
+        title: Title
     models:
+      category:
+        one: Category
+        others: Categories
       product:
         one: Product
         others: Products
+    successful:
+      messages:
+        created: "%{model} was successfully created."
+        destroyed: "%{model} was successfully destroyed."
+        updated: "%{model} was successfully updated."
+  categories:
+    edit:
+      back: Back to Categories
+      title: Edit Category
+    form:
+      name: Name
+    index:
+      add_category: Add category
+      title: Categories List
   common:
     confirm_action: Are you sure?
     destroy: Destroy
@@ -12,18 +37,22 @@ en:
   hello: Hello world
   products:
     create:
-      created: "Your product has been successfuly created"
+      created: Your product has been successfuly created
     destroy:
-      destroyed: "Your product has been successfuly destroyed"
+      destroyed: Your product has been successfuly destroyed
     form:
       description: Description
+      error: "error"
+      error_full: " must be corrected:"
       photo: Photo
       price: Price
       title: Title
     index:
       title: Products List
+    new:
+      title: Add a new product
     update:
-      updated: "Your product has been successfuly updated"
+      updated: Your product has been successfuly updated
   shared:
     header:
       add_product: Add product

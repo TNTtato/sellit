@@ -1,10 +1,35 @@
 ---
 es:
   activerecord:
+    attributes:
+      category:
+        name: Nombre
+      product:
+        description: Descripción
+        photo: Foto
+        price: Precio
+        title: Título
     models:
+      category:
+        one: Categoría
+        others: Categorías
       product:
         one: Producto
         others: Productos
+    successful:
+      messages:
+        created: Tu %{model} se ha creado correctamente.
+        destroyed: Tu %{model} se ha eliminado correctamente.
+        updated: Tu %{model} se ha actualizado correctamente.
+  categories:
+    edit:
+      back: Volver a Categorías
+      title: Editar Categoría
+    form:
+      name: Nombre
+    index:
+      add_category: Añadir Categoría
+      title: Lista de Productos
   common:
     confirm_action: "¿Deseas continuar?"
     destroy: Eliminar
@@ -12,18 +37,22 @@ es:
   hello: Hola Mundo
   products:
     create:
-      created: "Tu producto se ha creado correctamente"
+      created: Tu producto se ha creado correctamente
     destroy:
-      destroyed: "Tu producto se ha eliminado correctamente"
+      destroyed: Tu producto se ha eliminado correctamente
     form:
       description: Descripción
+      error: "error"
+      error_full: "se deben corregir:"
       photo: Foto
       price: Precio
       title: Título
     index:
       title: Lista de Productos
+    new:
+      title: Añadir nuevo producto
     update:
-      updated: "Tu producto se ha actualizado correctamente"
+      updated: Tu producto se ha actualizado correctamente
   shared:
     header:
       add_product: Añadir producto
