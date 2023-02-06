@@ -4,19 +4,19 @@
     <br>
   <% end %>
   <div>
-    <%= f.label :title%>
+    <%= f.label :title, t(".title") %>
     <%= f.text_field :title%>
   </div>
   <div>
-    <%= f.label :description%>
+    <%= f.label :description, t(".description") %>
     <%= f.text_area :description%>
   </div>
   <div>
-    <%= f.label :price%>
+    <%= f.label :price, t(".price") %>
     <%= f.number_field :price%>
   </div>
   <div>
-    <%= f.label :photo%>
+    <%= f.label :photo, t(".photo")%>
     <%= f.file_field :photo%>
   </div>
 

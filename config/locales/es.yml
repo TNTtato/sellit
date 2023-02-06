@@ -1,0 +1,29 @@
+---
+es:
+  activerecord:
+    models:
+      product:
+        one: Producto
+        others: Productos
+  common:
+    confirm_action: "¿Deseas continuar?"
+    destroy: Eliminar
+    edit: Editar
+  hello: Hola Mundo
+  products:
+    create:
+      created: "Tu producto se ha creado correctamente"
+    destroy:
+      destroyed: "Tu producto se ha eliminado correctamente"
+    form:
+      description: Descripción
+      photo: Foto
+      price: Precio
+      title: Título
+    index:
+      title: Lista de Productos
+    update:
+      updated: "Tu producto se ha actualizado correctamente"
+  shared:
+    header:
+      add_product: Añadir producto
