@@ -30,10 +30,15 @@ es:
     index:
       add_category: Añadir Categoría
       title: Lista de Productos
+    new:
+      title: Añadir nueva categoría
   common:
     confirm_action: "¿Deseas continuar?"
     destroy: Eliminar
     edit: Editar
+    form_errors:
+      error: error
+      error_full: " deben ser corregidos:"
   hello: Hola Mundo
   products:
     create:
@@ -42,8 +47,8 @@ es:
       destroyed: Tu producto se ha eliminado correctamente
     form:
       description: Descripción
-      error: "error"
-      error_full: "se deben corregir:"
+      error: error
+      error_full: 'se deben corregir:'
       photo: Foto
       price: Precio
       title: Título

@@ -30,10 +30,15 @@ en:
     index:
       add_category: Add category
       title: Categories List
+    new:
+      title: Add a new category
   common:
     confirm_action: Are you sure?
     destroy: Destroy
     edit: Edit
+    form_errors:
+      error: error
+      error_full: " must be corrected:"
   hello: Hello world
   products:
     create:
@@ -42,8 +47,8 @@ en:
       destroyed: Your product has been successfuly destroyed
     form:
       description: Description
-      error: "error"
-      error_full: " must be corrected:"
+      error: error
+      error_full: 'se deben corregir:'
       photo: Photo
       price: Price
       title: Title
