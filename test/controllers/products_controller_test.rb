@@ -56,4 +56,24 @@ class ProductsControllerTest < ActionDispatch::IntegrationTest
     assert_select "form"
   end
 
+  test "allow to edit a product" do
+    patch product_path(products(:ps4)), params: {
+      product: {
+        price: 999
+      }
+    }
+
+    assert_redirected_to products_path
+    assert_equal flash[:notice], "Tu producto se ha actualizado correctamente"
+  end
+
+  test "does not allow to edit a product" do
+    patch product_path(products(:ps4)), params: {
+      product: {
+        price: nil
+      }
+    }
+
+    assert_response :unprocessable_entity
+  end
 end
