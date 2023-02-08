@@ -57,6 +57,7 @@ es:
       all: Todos
       max_price: Precio Máx.
       min_price: Precio Min.
+      query_text: ¿Qué quieres buscar?
       title: Lista de Productos
     new:
       title: Añadir nuevo producto

@@ -57,6 +57,7 @@ en:
       all: All
       max_price: Max. price
       min_price: Min. price
+      query_text: What do you want to search?
       title: Products List
     new:
       title: Add a new product
