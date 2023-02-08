@@ -46,6 +46,7 @@ en:
     destroy:
       destroyed: Your product has been successfuly destroyed
     form:
+      category: Category
       description: Description
       error: error
       error_full: 'se deben corregir:'

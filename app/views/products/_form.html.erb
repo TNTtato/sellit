@@ -23,6 +23,10 @@
     <%= f.number_field :price%>
   </div>
   <div>
+    <%= f.label :category_id, t(".category") %>
+    <%= f.collection_select :category_id, Category.all.order(name: :asc), :id, :name %>
+  </div>
+  <div>
     <%= f.label :photo, t(".photo")%>
     <%= f.file_field :photo%>
   </div>

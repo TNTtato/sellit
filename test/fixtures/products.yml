@@ -4,8 +4,16 @@ ps4:
   title: PS4 Fat
   description: Good PS4
   price: 300
+  category: videogames
 
 switch:
   title: Nintendo Switch
   description: Falta lector SD
   price: 150
+  category: videogames
+
+air:
+  title: MacBook Air
+  description: Falla batería
+  price: 250
+  category: computers
