@@ -55,6 +55,8 @@ es:
       title: Título
     index:
       all: Todos
+      max_price: Precio Máx.
+      min_price: Precio Min.
       title: Lista de Productos
     new:
       title: Añadir nuevo producto
