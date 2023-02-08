@@ -54,6 +54,7 @@ es:
       price: Precio
       title: Título
     index:
+      all: Todos
       title: Lista de Productos
     new:
       title: Añadir nuevo producto
