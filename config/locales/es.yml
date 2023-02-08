@@ -55,9 +55,13 @@ es:
       title: Título
     index:
       all: Todos
+      cheap: Más baratos
+      expensive: Más caros
       max_price: Precio Máx.
       min_price: Precio Min.
-      query_text: ¿Qué quieres buscar?
+      oldest: Antiguos
+      query_text: "¿Qué quieres buscar?"
+      recent: Recientes
       title: Lista de Productos
     new:
       title: Añadir nuevo producto
