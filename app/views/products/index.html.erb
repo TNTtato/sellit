@@ -15,6 +15,7 @@
 
   <%= render partial: 'category', collection: @categories %>
   <br>
-  <%= render partial: 'product', collection: @products %>
-
+  <div class="products">
+    <%= render partial: 'product', collection: @products %>
+  </div>
 <% end %>

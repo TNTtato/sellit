@@ -2,10 +2,10 @@ class Product < ApplicationRecord
   include PgSearch::Model
   
   ORDER_BY = {
-    newest: "created_at DESC",
+    recent: "created_at DESC",
     oldest: "created_at ASC",
     expensive: "price DESC",
-    cheapest: "price ASC"
+    cheap: "price ASC"
   }
 
   pg_search_scope :search_full_text, against: {
