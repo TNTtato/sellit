@@ -2,7 +2,7 @@ class ProductsController < ApplicationController
   def index
     @categories = Category.all.load_async
     @products = Product.with_attached_photo
-    if params[:category_id]
+    if params[:category_id].present?
        @products = @products.where(category_id: params[:category_id])
     end
     if params[:min_price].present?
@@ -17,6 +17,8 @@ class ProductsController < ApplicationController
     order_by = Product::ORDER_BY.fetch(params[:order_by]&.to_sym, Product::ORDER_BY[:recent])
 
     @products = @products.order(order_by).load_async
+
+    @pagy, @products = pagy_countless(@products, items: 12)
   end
 
   def show
